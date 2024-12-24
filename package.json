@@ -1,0 +1,21 @@
+{
+  "name": "nodeproject",
+  "version": "1.0.0",
+  "description": "Created By Fares",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Vishwas",
+  "license": "MIT",
+  "devDependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.2"
+  }
+}

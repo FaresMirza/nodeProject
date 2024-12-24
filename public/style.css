@@ -1,0 +1,71 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #1b2735, #090a0f);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Styling for Article Container */
+div {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(72, 239, 128, 0.5);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Title Styling */
+div h2 {
+    font-size: 1.8rem;
+    color: #51f1f5;
+    text-shadow: 0 0 10px #51f1f5, 0 0 20px #51f1f5;
+    margin-bottom: 10px;
+}
+
+/* Body Text Styling */
+div p {
+    font-size: 1rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+    line-height: 1.6;
+}
+
+/* Number of Likes Styling */
+div span {
+    display: block;
+    font-size: 0.9rem;
+    color: #f3a952;
+    margin-top: 10px;
+    text-shadow: 0 0 5px #f3a952, 0 0 10px #f3a952;
+}
+
+/* Add a Starry Background Effect */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.imgur.com/9tjZlP8.jpg') repeat;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/* Glow Effect for Hover */
+div:hover {
+    box-shadow: 0 0 30px #51f1f5, 0 0 60px #51f1f5;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
